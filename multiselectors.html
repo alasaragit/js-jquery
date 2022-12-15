@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <title>The Selector Example</title>
+      <script type = "text/javascript" 
+         src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            /*  Selects all elements matched by <ul> that follow a sibling element matched by <
+            p>.*/
+            $("p strong, .myclass").css("background-color", "yellow");
+         });
+      </script>
+   </head>
+	
+   <body>
+      <p>With <strong>Coding Ground</strong> we bring an Online Lab where you 
+         can create your programs in more than <span class="myclass">80 programming languages
+         </span>, compile, execute and share them over the web, which provides you 
+         remarkable learning experience at a cost of just an internet connection!</p>
+   </body>
+</html>
