@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -11,10 +12,14 @@
         <li>bear</li>
     </ul>
     <script>
-        $('li').click(function(){
-            console.log( $('li'));
-            $(this).css('font-weight','bold');
+        $('li').mouseover(function () {
+            console.log($('li'));
+            $(this).css('font-weight', 'bold');
         });
+        $("li").mouseout(function () {
+            $(this).css('font-weight', 'normal');
+        }); 
     </script>
 </body>
+
 </html>

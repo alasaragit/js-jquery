@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+   <title>Onclick  Example</title>
+   <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <script>
+
+      $(document).ready(function () {
+         //get all div tag exptect a specifik id 
+         $("div:not(#divfour)").click(function () {
+            alert('You dont have clicked div four!');
+         });
+         // When any <p> tag is clicked, we expect to see '<p> was clicked' in the console and as a alert.
+         $("p").on("click", function () {
+            alert('paragraph there!');
+            console.log("<p> was clicked");
+         });
+          // this -> get the value of the element clicked
+         $("#divfour").click(function () {
+            alert($(this).text());
+         });
+      });
+   </script>
+   <style>
+      div {
+         margin: 10px;
+         padding: 12px;
+         border: 2px solid #666;
+         width: 60px;
+         cursor: pointer
+      }
+   </style>
+</head>
+
+<body>
+   <p>Click on any of the squares to see the result:</p>
+   <div>One</div>
+   <div>Two</div>
+   <div>Three</div>
+   <div id="divfour">Four</div>
+
+</body>
+
+</html>
