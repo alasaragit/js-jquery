@@ -12,6 +12,7 @@ window.onload = function () {
         }
         function hasClass(elem, cls) {
             var reClass = new RegExp(' ' + cls + ' ');
+            //The test() method executes a search for a match between a regular expression and a specified string. Returns true or false.
             return reClass.test(' ' + elem.className + ' ');
         }
     }
